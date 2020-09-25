@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
-
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -87,7 +87,8 @@
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 					<!-- <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li> -->
 					<li class="nav-item"><a href="projects.html" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="co-curricular.html" class="nav-link"><span>Co-curricular</span></a></li>
+					<li class="nav-item"><a href="co-curricular.html" class="nav-link"><span>Co-curricular</span></a>
+					</li>
 					<!-- <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> -->
 					<!-- <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li> -->
 				</ul>
@@ -558,24 +559,22 @@
 							</div>
 
 							<div class="col-4">
-								<img style="max-height: 450px;"
-								src="images/ict.png" class="img-fluid">
+								<img style="max-height: 450px;" src="images/ict.png" class="img-fluid">
 							</div>
 
 
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
-					
+
 							<div class="text pl-3 col-8">
 								<span class="date">2018</span>
 								<h2>First runners up in Project showcasing at Cybernauts</h2>
 								<span class="position">North South University Computer and Engineering Club (NSU
 									CEC)</span>
-								<p>Team: Hardcoders</p>
+								<p>Team Members: Rafed Muhammad Yasir, Moumita Asad, Md. Aquib Azmain</p>
 							</div>
 							<div class="col-4">
-								<img style="max-height: 500px;"
-								src="images/award1.jpg" class="img-fluid">
+								<img style="max-height: 500px;cursor: pointer;" src="images/award1.jpg" class="img-fluid" onclick="onClick(this)" class="w3-hover-opacity">
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -583,11 +582,10 @@
 								<span class="date">2018</span>
 								<h2>Second runners up in Project showcasing at Technival</h2>
 								<span class="position">KUET</span>
-								<p>Team: Hardcoders</p>
+								<p>Team Members: Rafed Muhammad Yasir, Moumita Asad, Md. Aquib Azmain</p>
 							</div>
 							<div class="col-4">
-								<img style="max-height: 500px;"
-								src="images/award2.jpg" class="img-fluid">
+								<img style="max-height: 500px;cursor: pointer;" src="images/award2.jpg" class="img-fluid" onclick="onClick(this)" class="w3-hover-opacity">
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -595,32 +593,40 @@
 								<span class="date">2018</span>
 								<h2>Second runners up in Project showcasing at BUET CSE Fest</h2>
 								<span class="position">CSE, BUET</span>
-								<p>Team: Hardcoders</p>
+								<p>Team Members: Rafed Muhammad Yasir, Md. Aquib Azmain</p>
 							</div>
 							<div class="col-4">
-								<img style="max-height: 500px;"
-								src="images/award3.jpg" class="img-fluid">
+								<img style="max-height: 500px;cursor: pointer;" src="images/award3.jpg" class="img-fluid" onclick="onClick(this)" class="w3-hover-opacity">
 							</div>
 						</div>
-						
+
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="text pl-3 col-11">
 								<span class="date">2018</span>
 								<h2>Top 6, SCORE, ICSE, Montreal, Canada</h2>
 								<span class="position">ICSE</span>
-								<p>Our team developed a project named "Showme" for SCORE (Student Contest on Software Engineering), ICSE 2018. This project made it to the final 6 in that contest.
+								<p>Our team developed a project named "Showme" for SCORE (Student Contest on Software
+									Engineering), ICSE 2018. This project made it to the final 6 in that contest.
 
-									ShowMe is a an application that will help the research community to find related work and understand the relationship among them by providing a citation graph.
-									<br/>
+									ShowMe is a an application that will help the research community to find related
+									work and understand the relationship among them by providing a citation graph.
+									<br />
 									Contributors:
 									Kishan Kumar Ganguly,
 									Moumita Asad,
 									Rafed Muhammad Yasir,
 									Md. Aquib Azmain,
 									Eusha Kadir
-									</p>
+								</p>
 							</div>
 						</div>
+
+						<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+							  <img id="img01" style="width:100%">
+							</div>
+						  </div>
 					</div>
 				</div>
 			</div>
@@ -834,11 +840,14 @@
 		<div class="overlay"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-  
-			  <p>
-&copy; Md. Aquib Azmain, <script>document.write(new Date().getFullYear());</script> </p>
+
+				<p>
+					&copy; Md. Aquib Azmain, <script>
+						document.write(new Date().getFullYear());
+					</script>
+				</p>
 			</div>
-		  </div>
+		</div>
 	</section>
 
 	<!-- <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
@@ -998,7 +1007,12 @@
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" /></svg></div>
 
-
+	<script>
+		function onClick(element) {
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+		}
+	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>

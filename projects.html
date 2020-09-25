@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/jpg" href="images/icon.jpg" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     
@@ -56,8 +56,8 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a class="block-20" style="background-image: url('images/project1.png');">
-              </a>
+           
+              <img style="max-width: 100%; cursor: pointer;"src="images/project1.png" onclick="onClick(this)" class="w3-hover-opacity">
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a>Virtual Trial Room</a>
                 </h3>
@@ -75,8 +75,9 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a class="block-20" style="background-image: url('images/project2.jpg');">
-              </a>
+              <!-- <a class="block-20" style="background-image: url('images/project2.jpg');">
+              </a> -->
+              <img style="max-width: 100%; cursor: pointer;"src="images/project2.jpg" onclick="onClick(this)" class="w3-hover-opacity">
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a>Hall Management System</a>
                 </h3>
@@ -95,8 +96,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a class="block-20" style="background-image: url('images/project3.jpg');">
-              </a>
+              <img style="max-width: 100%;cursor: pointer;"src="images/project3.jpg" onclick="onClick(this)" class="w3-hover-opacity">
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a>UIAnalyzer</a>
                 </h3>
@@ -118,8 +118,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a class="block-20" style="background-image: url('images/project4.jpg');">
-              </a>
+              <img style="max-width: 100%;cursor: pointer;"src="images/project4.jpg" onclick="onClick(this)" class="w3-hover-opacity">
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a>Showme</a>
                 </h3>
@@ -144,8 +143,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a class="block-20" style="background-image: url('images/project5.PNG');">
-              </a>
+              <img style="max-width: 100%;cursor: pointer;"src="images/project5.png" onclick="onClick(this)" class="w3-hover-opacity">
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a>Morichbati</a>
                 </h3>
@@ -168,8 +166,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a class="block-20" style="background-image: url('images/project6.jpg');">
-              </a>
+              <img style="max-width: 100%;cursor: pointer;"src="images/project6.jpg" onclick="onClick(this)" class="w3-hover-opacity">
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a>Shworolipi</a>
                 </h3>
@@ -192,8 +189,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry justify-content-end">
-              <a class="block-20" style="background-image: url('images/project7.png');">
-              </a>
+              <img style="max-width: 100%;cursor:pointer"src="images/project7.png" onclick="onClick(this)" class="w3-hover-opacity">
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a>Audio Editor</a>
                 </h3>
@@ -213,10 +209,17 @@
               </div>
             </div>
           </div>
+
+          <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img id="img01" style="width:100%">
+            </div>
+          </div>
         </div>
       </div>
     </section>
-		
+
 
     <section class="ftco-section ftco-hireme">
       <div class="overlay"></div>
@@ -234,7 +237,12 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+  <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+    }
+  </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
