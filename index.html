@@ -5,7 +5,7 @@
 	<title>Aquib Azmain | Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="google-site-verification" content="gknZmopny-lzBW-kfhyaZCL0DMdqfEnWMdmrQins_vk" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:title" content="Aquib Azmain | Portfolio" />
 	<meta property="og:url" content="https://aquibazmain.github.io/" />
 	<meta property="og:description"
@@ -45,6 +45,16 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <style>
+	html, body {
+    	max-width: 100%;
+    	overflow-x: hidden;
+	}
+	@media only screen and (max-width: 768px) {
+		/* For mobile phones: */
+		.hidden-mobile {
+			display: none;
+		}
+	}
 	.fa {
 		padding: 10px;
 		font-size: 20px;
@@ -116,7 +126,7 @@
 			</div>
 		</div>
 	</nav>
-	<section class="hero-wrap js-fullheight">
+	<section class="hero-wrap js-fullheight hidden-mobile">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
@@ -124,20 +134,21 @@
 					<div class="text text-center">
 						<span class="subheading">Hey! I am</span>
 						<h1>Md. Aquib Azmain</h1>
-						<h2>I'm a
+						<!-- <h2>I'm a
 							<span class="txt-rotate" data-period="2000"
 								data-rotate='[ "Software Engineer.", "Graduate Student."]'></span>
-						</h2>
+						</h2> -->
+						<h2>Software Engineer | Graduate Student</h2>
 					</div>
 				</div>
 			</div>
 		</div>
 		</div>
-		<div class="mouse">
+		<!-- <div class="mouse">
 			<a href="#" class="mouse-icon">
 				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
 			</a>
-		</div>
+		</div> -->
 	</section>
 
 	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
@@ -191,6 +202,8 @@
 								class="fa fa-youtube"></a>
 							<a href="https://www.instagram.com/aquib_azmain/" target="_blank"
 								class="fa fa-instagram"></a>
+							<a href="skype:aquibazmain?chat" target="_blank"
+								class="fa fa-skype"></a>
 
 						</div>
 					</div>
@@ -250,7 +263,7 @@
 								<span class="position">Institute of Information Technology, University of Dhaka</span>
 								<p>In progress</p>
 							</div>
-							<div class="col-2">
+							<div class="col-2 hidden-mobile">
 								<a href="http://www.iit.du.ac.bd/" target="_blank"><img style="max-height: 50px;"
 										src="images/iitlogo-blue.png"></a>
 							</div>
@@ -265,7 +278,7 @@
 								<span class="position">Institute of Information Technology, University of Dhaka</span>
 								<p>CGPA 3.89 out of 4.00</p>
 							</div>
-							<div class="col-2">
+							<div class="col-2 hidden-mobile">
 								<a href="http://www.iit.du.ac.bd/" target="_blank"><img style="max-height: 50px;"
 										src="images/iitlogo-blue.png"></a>
 							</div>
@@ -280,7 +293,7 @@
 								<span class="position">Govt. Azizul Haque College, Bogura</span>
 								<p>Science, GPA 5.00 out of 5.00</p>
 							</div>
-							<div class="col-2">
+							<div class="col-2 hidden-mobile">
 								<a href="http://www.ahcollege.gov.bd/" target="_blank"><img style="max-height: 100px;"
 										src="images/govt-azizul-haque-college-bogra.png"></a>
 							</div>
@@ -295,7 +308,7 @@
 								<span class="position">Bogura Cantonment Public School and College</span>
 								<p>Science, GPA 5.00 out of 5.00</p>
 							</div>
-							<div class="col-2">
+							<div class="col-2 hidden-mobile">
 								<a href="http://bcpsc.edu.bd/" target="_blank"><img style="max-height: 100px;"
 										src="images/BCPSC.png"></a>
 							</div>
@@ -326,7 +339,7 @@
 									Created and implemented written and oral assessments (Lab exams, presentations).
 								</p>
 							</div>
-							<div class="col-2">
+							<div class="col-2 hidden-mobile">
 								<a href="http://www.iit.du.ac.bd/" target="_blank"><img style="max-height: 50px; "
 										src="images/iitlogo-blue.png"></a>
 							</div>
@@ -340,7 +353,7 @@
 								<p>I was involved in a real life project during 6 months of my internship. This includes
 									working with HTML, CSS, TypeScript, Angular 5, Angular Material.</p>
 							</div>
-							<div class="col-3">
+							<div class="col-3 hidden-mobile">
 								<a href="https://selise.ch/" target="_blank"><img style="max-height: 40px; "
 										src="images/selise-logo.png"></a>
 							</div>
@@ -353,7 +366,7 @@
 								<p>Conducted requirement analysis for a software “Digital Letter” of Department of
 									Military Lands & Cantonments.</p>
 							</div>
-							<div class="col-3">
+							<div class="col-3 hidden-mobile">
 								<a href="https://www.softcellbd.net/" target="_blank"><img style="max-height: 40px;"
 										src="images/softcell-logo-wide.png"></a>
 							</div>
@@ -414,6 +427,81 @@
 									factors on the unit production of the crops.
 								</li>
 							</ul>
+
+
+							<!-- <div id="accordion">
+								<div class="">
+								  <div class="" id="headingOne">
+									<h5 class="mb-0">
+									  <a class=" collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										Improving symmetric structure during resolution of mobile friendly prblems in web pages
+									  </a>
+									</h5>
+								  </div>
+							  
+								  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										Mobile friendly problem (MFP) causes the low quality of the website visibility and has a potential risk to decrease usability for a mobile user. The solution proposed an automatic repair technique that generates symmetric mobile friendly patches for a web page.
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header" id="headingTwo">
+									<h5 class="mb-0">
+									  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										On the evolutionary properties of fix inducing changes
+									  </button>
+									</h5>
+								  </div>
+								  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										Analyzing Fix-Inducing Changes (developer code that introduce bugs) provides the opportunity to estimate bugs beforehand. This study analyzes the evolution of FICs to visualize patterns associated with the introduction of bugs throughout and within project releases.
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header" id="headingThree">
+									<h5 class="mb-0">
+									  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Noise filters in software defect prediction
+									  </button>
+									</h5>
+								  </div>
+								  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										By using a diverse set of classifiers, imbalance-methods and noise filters, this study empirically investigates how the presence of label noise in post-release defect prediction datasetsaffect performance and evaluates the effectiveness of noisefilters in minimizing the adverse effects of noise.
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingFour">
+									  <h5 class="mb-0">
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+											Towards the detection and refactoring of message chains
+										</button>
+									  </h5>
+									</div>
+									<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+									  <div class="card-body">
+										Message Chain is a code smell which occurs when inefficient responsibility delegations create chains of consequent method calls, resulting incode that becomes difficult to interpret and maintain. This study proposes a method of detecting and suggesting the refactoring for Message Chains.
+									  </div>
+									</div>
+								  </div>
+								  <div class="card">
+									<div class="card-header" id="headingFive">
+									  <h5 class="mb-0">
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+											A machine learning-based inference and analysis of crop production based on climate parameters in Bangladesh
+										</button>
+									  </h5>
+									</div>
+									<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+									  <div class="card-body">
+										Using standard approaches of machine learning – linear11regression, support vector machine, random forest and more – this studu provides appropriate prediction models for all the crops considered and infers the numeric effect of various climate factors on the unit production of the crops.
+									  </div>
+									</div>
+								  </div>
+							  </div> -->
 						</div>
 					</div>
 
