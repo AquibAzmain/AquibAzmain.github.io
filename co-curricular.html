@@ -40,37 +40,76 @@
     max-width: 100%;
     overflow-x: hidden;
   }
+  .custom-nav {
+		padding-top: 10px;
+		padding-bottom: 0.3125rem;
+		margin-right: 1rem;
+		font-size: 1.5rem;
+		white-space: nowrap;
+	}
+
+	.navbar-brand:hover,
+	.navbar-brand:focus {
+		text-decoration: none;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.about-text {
+			margin-top: -20px;
+		}
+
+		.test {
+			background-color: white;
+		}
+	}
+
+	@media only screen and (min-width: 992px) {
+		.about-text {
+			margin-top: 30px;
+		}
+
+		.name-tag {
+			color: black;
+		}
+
+	}
 </style>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><span>A</span>quib Azmain</a>
-      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
+		id="ftco-navbar">
+		<div class="container">
+			<div class="custom-nav name-tag">
+				<a href="index.html"><b>Md. Aquib Azmain</b></a><br />
+				<p style="font-size: 1rem; margin-top: -10px;">Software Engineer | Researcher</p>
+			</div>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
-          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
-          <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>Resume</span></a></li>
-          <li class="nav-item"><a href="projects.html" class="nav-link"><span>Projects</span></a></li>
-          <li class="nav-item"><a href="#" class="nav-link active"><span>Co-curricular</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="education.html" class="nav-link"><span>Education</span></a></li>
+					<li class="nav-item"><a href="publications.html" class="nav-link"><span>Publications</span></a></li>
+					<li class="nav-item"><a href="projects.html" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="experience.html" class="nav-link"><span>Experience</span></a></li>
+          <li class="nav-item"><a href="skills.html" class="nav-link"><span>Skills</span></a></li>
+          <li class="nav-item"><a href="awards.html" class="nav-link"><span>Awards</span></a></li>
+					<li class="nav-item"><a href="co-curricular.html" class="nav-link active"><span>Co-curricular</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
   <section class="ftco-section">
     <div class="container">
-      <div class="row justify-content-center mb-10 pb-5">
+      <div class="row justify-content-center mb-2 pb-2">
         <div class="col-md-7 heading-section text-center ftco-animate">
           <!-- <h1 class="big big-2">Blog</h1> -->
-          <h2 class="mb-4">Music</h2>
+          <h2 class="mb-4 about-text">Music</h2>
           <p>I’ve been with music for a long time. I was home schooled in Rabindra Sangit, Nazrul Geeti and Folk songs
             for about 10 years. Later I joined Chayanaut in 2016.
             Now I am a student of 3rd year, Rabindra Sangeet Department, Chayanaut.
@@ -150,23 +189,56 @@
       </div>
   </section>
 
-  <section clas="ftco-section" style="margin-bottom: 100px;">
-    <h3 class="text-center">Check out my <a href="index.html#resume-section">resume</a> and <a href="projects.html">projects.</a></h3>
-  </section>
-
-  <section class="ftco-section ftco-hireme">
-    <div class="overlay"></div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-
-        <p>
-          &copy; Md. Aquib Azmain, <script>
-            document.write(new Date().getFullYear());
-          </script>
-        </p>
-      </div>
-    </div>
-  </section>
+  <footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<ul class="list-unstyled">
+							<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+							<li><a href="education.html"><span class="icon-long-arrow-right mr-2"></span>Education</a></li>
+							<li><a href="publications.html"><span class="icon-long-arrow-right mr-2"></span>Publication</a></li>
+							<li><a href="projects.html"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<ul class="list-unstyled">
+							<li><a href="experience.html"><span class="icon-long-arrow-right mr-2"></span>Experience</a></li>
+							<li><a href="skills.html"><span class="icon-long-arrow-right mr-2"></span>Skills</a></li>
+							<li><a href="awards.html"><span class="icon-long-arrow-right mr-2"></span>Awards</a></li>
+							<li><a href="co-curricular.html"><span class="icon-long-arrow-right mr-2"></span>Co-curricular</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Contact</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon icon-map-marker"></span><span class="text">House#339, Jafrabad,
+										West Dhanmondi, Sankar, Dhaka</span></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span
+											class="text">+8801819664793</span></a></li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">aquibazmain123@gmail.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>
+						&copy; Md. Aquib Azmain, <script>
+							document.write(new Date().getFullYear());
+						</script>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
